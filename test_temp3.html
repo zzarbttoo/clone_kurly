@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type = "text/css">
+    
+        /*원래는 dt 안에 넣었다*/
+        dl {
+
+            width : 600px;
+            border : 1px aliceblue solid;
+            background-color : green
+        }
+
+        button{
+
+            margin-left : 40px;
+        }
+
+        li{
+            list-style : none;
+            background-color :aliceblue;
+
+        }
+
+        #input1{
+
+            position: absolute;
+            left : 100px;
+
+
+        }
+    
+    </style>
+
+</head>
+<body>
+    
+    <dl class ="box">
+       
+        <dd class = "line">
+            <b id = "title">로그인 정보</b>
+            <ol>
+                <li>아이디 <input type ="text" class ="input1" ></li>
+                <li>비밀번호<input type = "password" class= "input1"></li>
+                <li>비밀번호 확인<input type = "password" class ="input1"></li>
+                <li>회원 등급<input type = "text" class ="input1"></li>
+            </ol>
+        </dd>
+
+        <dd class ="line">
+            <b id = "title">개인정보</b>
+
+            <ol>
+                <li>이름<input type = "type" maxlength="5" class ="input1"></li>
+                <li>메일 주소<input type = "email" class ="input1"></li>
+                <li>연락처<input type = "phone" class ="input1"></li>
+            </ol>
+        </dd>
+
+        <dd class="line">
+            <b id = "title">코딩 숙련도(상, 중, 하)</b>
+            <ol>
+
+                <li><input type = "range"> </li>
+            </ol>
+        </dd>
+    </dl>
+
+    <button id = "button" type = "button">제출</button>
+
+
+</body>
+</html>

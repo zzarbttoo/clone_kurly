@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type = "text/css">
+
+        .bnr_header.bnr_arr{
+            display:inline-block;
+            width:42px;
+            height:42px;
+            vertical-align:top;
+        }
+
+        .bnr_header{
+
+            position : relative;
+            min-width : 1050px;
+            text-align : center;
+            line-height : 42px;
+            font-size : 14px;
+
+        }
+
+        .bnr_header a{
+            
+            display:block;
+            height : 42px;
+            background-color : #5f0080;
+            color : #fff;
+
+        }
+
+        .bnr_header .bnr_arr{
+
+            display : inline-block;
+            width :42px;
+            height : 42px;
+            vertical-align : top
+
+
+        }
+
+         
+
+
+            
+
+
+
+
+
+
+        
+
+        
+    </style>
+</head>
+<body>
+ 
+    <div id = "wrap" class>
+
+
+        <div id ="pos_scroll"></div>
+        <div id ="container">
+            <div id ="header">
+                <div class ="bnr_header" id ="top-message">
+                    <a href = "https://www.kurly.com/shop/event/kurlyEvent.php?htmid=event/join/join_200715" 
+                    id = "eventLanding">" 지금 가입하고 인기 상품 " <b>100원</b> "에 받아가세요!"</a>
+                    <img src = "마켓컬리____내일의_장보기__마켓컬리/ico_arrow_fff_84x84.png" class="bnr_arr">
+                    <div class = "bnr_top">
+                        <div class ="inner_top_close">
+                            <button id ="top-message-close" class ="btn_top_bnr">가입하고 혜택 받기</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div id = "userMenu">
+                    <ul class="list_menu">
+                        <li class="menu none_sub menu_join">
+                            <a href ="#" class ="link_menu">회원 가입</a>
+                            ::after
+                        </li>
+                        <li class ="menu none_sub">
+                            <a href="#" class ="link_menu">로그인</a>
+                            ::after
+                        </li>
+                        <li class ="menu">
+                            ::before
+                            <a href ="#" class ="link_menu">고객 센터</a>
+                            <ul class ="sub">
+                                <li>
+                                <a href ="#">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href ="#">자주하는 질문</a>
+                                </li>
+                                <li>
+                                    <a href ="#">1:1 문의</a>
+                                </li>
+                                <li>
+                                    <a href ="#">상품 제안</a>
+                                </li>
+                                <li>
+                                    <a href = "#">에코포장 피드백</a>
+                                </li>
+                            </ul>
+                            ::after
+                        </li>
+                        <li class ="menu lst">
+                            <a href ="#" onclick="address_chk_popup();return false;" class ="link_menu">배송지역 검색</a>
+                        </li>
+                    </ul>
+                    ::after
+                </div>
+                <div id="headerLogo" class ="layout-wrapper">
+                    <h1 class="logo">
+                        <a href = "#" class ="link_main">
+                            <span id ="gnbLogoContainer"></span>
+                            <img src ="마켓컬리____내일의_장보기__마켓컬리/logo_x2.png" alt ="마켓컬리 로고">
+                        </a>
+                    </h1>
+                    <a href ="#" onclick="ga('send', 'event', 'etc', 'main_gif_btn_click');" class ="bnr_delivery">
+                        <img src ="마켓컬리____내일의_장보기__마켓컬리/delivery_190819.gif" alt ="서울, 경기, 인천 샛별배송, 수도권 이외 지역 택배배송">
+                        </a>
+                </div>
+                <div id="gnb" class>
+                    <h2 class ="screen out">메뉴</h2>
+
+                    <div class= gnb_main>
+                        <ul class ="gnb">
+                            <li class = "menu1">
+                                <!--이미지 호출 할 거 같은데!-->
+                                <a href = "#none">
+                                    <span class ="ico"></span>
+                                    <span class ="txt">전체 카테고리</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href = "#" class ="link new">
+                                    <span class ="txt">신상품</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "link best">
+                                    <span class ="txt">베스트</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href = "#" class ="link bargain">
+                                    <span class ="txt">알뜰쇼핑</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class ="link event">
+                                    <span class ="txt">이벤트</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+
+                        <div id ="side_search" class = "gnb_search">
+
+                            <form>
+                                <input type ="image" src = "마켓컬리____내일의_장보기__마켓컬리/ico_search_x2.png" class = "btn_search">
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div id="main">
+                <div id ="content"></div>
+
+
+
+            </div>
+            <div id ="layerDSR">
+                <div class ="bg_dim"></div>
+                <div class ="in_layer"></div>
+
+
+            </div>
+            <div id ="footer">
+                <div class ="inner_footer"></div>
+                <div class ="footer_link"></div> -->
+            </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+</html>
