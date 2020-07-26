@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>짭켓컬리</title>
 
     <style type = "text/css">
 
+
+        body, input, select, textarea, button{
+
+            line-height: 1;
+            letter-spacing : -.05em;
+            color : #4c4c4c;
+            font-size : 12px;
+            max-width : 100%;
+
+
+        }
         
 
         *, *:after, *:before{
@@ -49,6 +60,13 @@
             margin-inline-start : 0px;
             margin-inline-end : 0px;
             padding-inline-start : 40px;
+
+        }
+
+        li{
+
+            display : list-item;
+            text-align: -webkit-match-parent;
 
         }
 
@@ -282,6 +300,499 @@
 
 
         }
+
+        <!-- header_gnb-->
+
+        .screen_out{
+
+            display : block;
+            overflow : hidden;
+            position : absolute;
+            left : -9999px;
+            width : 1px;
+            height : 1px;
+            font-size : 0;
+            line-height : 0;
+            text-indent : -9999px;
+
+        }
+
+        h2{
+
+            margin-block-start : 0.83em;
+            margin-block-end : 0.83em;
+            margin-inline-start : 0px;
+            margin-inline-end : 0px;
+            font-weight : bold;
+
+        }
+
+        #gnb {
+
+            position : relative;
+            width : 1050px;
+            height : 56px;
+            margin : 0 auto;
+
+
+        }
+
+        #gnb .gnb_kurly{
+
+
+            position : relative;
+            z-index : 300;
+            min-width : 1050px;
+            background-color : #fff;
+            letter-spacing : -0.3px;
+
+        }
+
+        #gnb .inner_gnbkurly{
+
+            position : relative;
+            width : 1050px;
+            height : 56px;
+            margin : 0 auto;
+
+        }
+
+        #gnb .gnb_main{
+
+
+            overflow : hidden;
+            width : 1050px;
+            margin : 0 auto;
+
+        }
+
+        #gnb .gnb_main .gnb{
+
+            float : left;
+            width : 100%;
+
+        }
+
+        #gnb .gnb_main .gnb li{
+
+            float : left;
+            background : url("https://res.kurly.com/pc/service/common/1902/line_1x11_c_ccc.png")
+            no-repeat 100% 23px;
+
+        }
+
+        #gnb .gnb_main .menu1 a{
+
+            padding-left : 19px;
+
+        }
+
+        #gnb .gnb_main .gnb{
+
+            float: left;
+            width : 100%;
+        }
+
+        #gnb .gnb_main .menu1 .ico{
+
+            float : left;
+            width : 16px;
+            height : 14px;
+            margin : 4px 14px 0 0;
+            background : url("마켓컬리____내일의_장보기__마켓컬리/ico_gnb_all_off.png");
+
+        }
+
+        #gnb .gnb_main .gnb a{
+
+            overflow : hidden;
+            float : left;
+            height : 55px;
+            padding : 16px 50px 0 48px;
+            font-size : 16px;
+            color : #333;
+            line-height: 20px;
+
+        }
+
+        #gnb .gnb_main .gnb a .txt{
+
+            font-weight : 700;
+
+        }
+
+        #gnb .gnb_main .menu1 a.on .txt,
+        #gnb .gnb_main .menu1 a:hover .txt,
+        #gnb .gnb_main .menu1 .txt{
+
+            float : left;
+            font-weight : 700;
+            border-bottom : 0;
+
+        }
+
+        #gnb .gnb_search{
+
+            position : absolute;
+            right : 45px;
+            top : 10px;
+            width : 238px;
+
+        }
+
+        #gnb .gnb_search .inp_search{
+
+
+            width : 238px;
+            height : 36px;
+            padding : 0 50px 0 20px;
+            border : 1px solid #f7f7f6;
+            border-radius: 18px;
+            background-color: #f7f7f7;
+            font-weight : 400;
+            color : #666;
+            line-height: 16px;
+            outline : none;
+
+        }
+
+        #gnb .gnb_search .btn_search{
+
+            position : absolute;
+            right: 10px;
+            top : 3px;
+            width : 30px;
+            height : 30px;
+
+        }
+
+
+        #gnb .cart_count{
+
+            position : absolute;
+            right: -6px;
+            top : 10px;
+
+        }
+
+        #gnb .cart_count .inner_cartcount{
+
+            text-align : center;
+            font-weight: 400;
+
+        }
+
+        #gnb .cart_count img{
+
+            display : block;
+            width :  36px;
+            height:  36px;
+            margin : 0 auto;
+
+        }
+
+        #gnb .cart_count .num{
+
+            display : none;
+            position : absolute;
+            left : 19px;
+            top : -1px;
+            min-width : 20px;
+            height : 20px;
+            padding : 0 4px;
+            border : 2px solid #fff;
+            border-radius : 10px;
+            background-color : #5f0080;
+            font-size : 9px;
+            color : #fff;
+            line-height: 15px;
+            text-align : center;
+            white-space : nowrap;
+
+        }
+
+        #gnb .gnb_kurly:after{
+
+            content : "";
+            position : absolute;
+            z-index : 299;
+            left : 0;
+            top : 56px;
+            width : 100%;
+            height: 9px;
+            background : url("마켓컬리____내일의_장보기__마켓컬리/bg_1x9.png") repeat-x 0 100%;
+
+        }
+
+        <!--main-->
+        #content{
+
+            padding-bottom : 170px;
+            min-width : 1050px;
+
+        }
+
+        #content, #container , #content{
+
+            position : relative;
+
+        }
+
+        #eventView{
+
+            min-width : 1050px;
+
+        }
+
+        .page_event{
+
+            min-width : 1050px;
+
+        }
+
+        .page_event .view_event{
+
+            position : relative;
+            width : 1050px;
+            margin : 0 auto;
+            text-align : center;
+
+        }
+
+
+        .page_event .btn_link{
+
+            overflow : hidden;
+            position : absolute;
+            background : url("마켓컬리____내일의_장보기__마켓컬리/bg_1_1.gif") repeat 0 0;
+            font-size : 0;
+            line-height: 0;
+            text-indent : -9999px;
+
+
+        }
+
+
+
+
+        .view_event1{
+
+            height : 484px;
+            background : url("마켓컬리____내일의_장보기__마켓컬리/img_main.jpg") no-repeat 50% 0;
+
+        }
+
+        .view_event1 .view_evnet{
+
+            position : relative;
+
+        }
+
+           .view_event1 .box_btn{
+
+            overflow : hidden;
+            position : absolute;
+            left : -28px;
+            top : 271px;
+            width : 354px;
+            height: 124px;
+            background : url("마켓컬리____내일의_장보기__마켓컬리/main_btn.png") no-repeat 50% 0;
+
+        }
+
+
+        .view_event1 .box_btn .link_join{
+
+            width : 300px;
+            height: 71px;
+            left : 27px;
+            top : 16px;
+
+        }
+
+        .view_event2{
+
+            height: 100px;
+            background : url("마켓컬리____내일의_장보기__마켓컬리/bg_tab.jpg") no-repeat 50% 0;
+
+        }
+
+        .view_event2 .btn_link{
+
+
+            width : 348px;
+            height:  100px;
+            background : url("마켓컬리____내일의_장보기__마켓컬리/tab_menu.jpg") no-repeat;
+
+        }
+
+        .view_event2 .link_benefit1{
+
+            left : 4px;
+
+        }
+
+        .page_event .btn_link{
+
+            overflow : hidden;
+            position : absolute;
+            font-size : 0;
+            line-height: 0;
+            text-indent : -9999px;
+
+        }
+
+        .view_event2 .link_benefit2{
+
+            width : 329px;
+            left : 352px;
+            background-position : -348 0px;
+
+        }
+
+        .view_event2 .link_benefit2{
+
+            width : 349px;
+            left : 352px;
+            background-position : -348px 0;
+
+        }
+
+        .view_event2 .link_benefit3{
+
+            width : 348px;
+            left : 701px;
+            background-position : -697px 0;
+
+
+        }
+
+        .view_event4 .tit{
+
+            padding : 160px 0 34px;
+
+        }
+
+        .page_event img{
+
+            vertical-align : top;
+
+
+        }
+
+        .page_event .view_event{
+
+            position : relative;
+            width : 1050px;
+            margin : 0 auto;
+            text-align: center;
+
+        }
+
+        .view_event4 .list{
+
+            float : left;
+            width : 1095px;
+        }
+
+        .view_event4 .list_goods{
+
+            overflow : hidden;
+            width : 1050px;
+            margin : 0 auto;
+            text-align : center;
+
+
+        }
+
+
+        .view_event4 .list li{
+
+            position : relative;
+            float : left;
+            width : 320px;
+            height : 503px;
+            margin : 22px 5px 0 0;
+
+        }
+
+
+        .view_event4 .list li .ico_arrow2{
+
+            left : 60px;
+        }
+
+        .view_event4 .list li .ico_arrow{
+
+            left : 70px;
+            top : 460px;
+            width : 96px;
+            height: 8px;
+            background : url("마켓컬리____내일의_장보기__마켓컬리/ico_arrow.png");
+
+        }
+
+        <!--화살표 및 솔림 문제 해결 요먕-->
+
+        .view_event4 .list li .ico_comm{
+
+            opacity : 0;
+            overflow : hidden;
+            position : absolute;
+            width : 0;
+            font-size : 0;
+            line-height: 0;
+            text-indent : -9999px;
+
+        }
+
+        .view_event4 .list_goods_text{
+
+            margin : 60px auto 80px;
+            text-align : center;
+
+        }
+
+        <!--view_event5-->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
         
 
 
@@ -317,8 +828,6 @@
 <body>
  
     <div id = "wrap" class>
-
-
         <div id ="pos_scroll"></div>
         <div id ="container">
             <div id ="header">
@@ -378,58 +887,148 @@
                         <img src ="마켓컬리____내일의_장보기__마켓컬리/delivery_190819.gif" alt ="서울, 경기, 인천 샛별배송, 수도권 이외 지역 택배배송">
                         </a>
                 </div>
-                <div id="gnb" class>
-                    <h2 class ="screen out">메뉴</h2>
+                <div id="gnb">
+                    <!--<h2 class ="screen_out"> 메뉴 </h2> -->
+                    <div id ="gnbMenu" class ="gnb_kurly">
+                        <div class = "inner_gnbkurly">
+                            <div class ="gnb_main">
+                                <ul class = "gnb">
+                                    <li class ="menu1">
+                                        <a href = "#" class>
+                                            <span class ="ico"></span>
+                                            <span class ="txt">전체 카테고리</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href= "#" class = "link best ">
+                                            <span class ="txt">베스트</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href = "#" class = "link bargain">
+                                            <span class ="txt">알뜰쇼핑</span>
+                                        </a>
+                                    </li>
+                                    <li class ="lst">
+                                        <a href = "#" class ="link event">
+                                            <span class ="txt">이벤트</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div id="side_search" class ="gnb_search">
 
-                    <div class= gnb_main>
-                        <ul class ="gnb">
-                            <li class = "menu1">
-                                <!--이미지 호출 할 거 같은데!-->
-                                <a href = "#none">
-                                    <span class ="ico"></span>
-                                    <span class ="txt">전체 카테고리</span>
-                                </a>
-                            </li>
+                                    <form action ="#">
+                                        <input type="text" id value required="required"  label ="검색어" class ="inp_search">
+                                        <input type="image" src = "마켓컬리____내일의_장보기__마켓컬리/ico_search_x2.png" class = "btn_search">
 
-                            <li>
-                                <a href = "#" class ="link new">
-                                    <span class ="txt">신상품</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href = "#" class = "link best">
-                                    <span class ="txt">베스트</span>
-                                </a>
-                            </li>
+                                    </form>
+                                  
+                                </div>
+                                <div class="cart_count">
 
-                            <li>
-                                <a href = "#" class ="link bargain">
-                                    <span class ="txt">알뜰쇼핑</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href = "#" class ="link event">
-                                    <span class ="txt">이벤트</span>
-                                </a>
-                            </li>
-                            
-                        </ul>
-
-                        <div id ="side_search" class = "gnb_search">
-
-                            <form>
-                                <input type ="image" src = "마켓컬리____내일의_장보기__마켓컬리/ico_search_x2.png" class = "btn_search">
-                            </form>
+                                    <div class = "inner_cartcount">
+                                        <a href = "#" class ="btn_cart">
+                                            <img src ="마켓컬리____내일의_장보기__마켓컬리/ico_cart_x2_v2.png" alt = "장바구니">
+                                            <span id = "cart_item_count" class ="num realtime_cartcount" style ="display:none"></span>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
 
                     </div>
-
                 </div>
             </div>
-            <!-- <div id="main">
-                <div id ="content"></div>
+            <div id="main">
+
+                <div id ="content">
+                    <div id = "eventView">
+                        <div class = "page_event">
+                            <!--<h3 class ="screen_out">마켓컬리 회원가입 이벤트</h3>-->
+                            <div class ="view_event1">
+                                <div class ="view_event">
+                                    <!--<h4 class = "screen_out">마켓컬리 가입하고 인기상품 100원부터</h4> -->
+                                    <div class ="box_btn"><a href = "#" class ="btn_link link_join"><!--가입하고 혜택 받기--></a></div>
+                                </div>
+                            </div>
+                            <div class = "view_event2">
+                                <div class = "view_event">
+                                    <ul id = "eventBenefit" class = "tab_benefit">
+                                        <li><a href="#" class  = "btn_link link_benefit1">Wecome Gift</a></li>
+                                        <li><a href="#" class  = "btn_link link_benefit2">구매 무료 배송</a></li>
+                                        <li><a href="#" class  = "btn_link link_benefit3">한달 동안 5% 적립(첫 구매 후)</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div id = "eventBenefit01" class = "view_event4">
+
+                                <div class = "view event">
+                                    <h4 class ="tit">
+                                        <img src ="마켓컬리____내일의_장보기__마켓컬리/img_benefit1.png">
+                                    </h4>
+
+                                    <p class ="screen_out"></p>
+                                    <div class="list_goods">
+                                        <ul class="list">
+                                            <li>
+                                                <a href= "#">
+                                                    <img src ="마켓컬리____내일의_장보기__마켓컬리/img_goods1_v2.jpg">
+                                                </a>
+                                                <span class ="ico_comm ico_arrow ico_arrow2"></span>
+                                                <span class ="ico_comm ico_price4">3,000원</span>
+                                            </li>
+                                            <li>
+                                                <a href = "#"><img src ="마켓컬리____내일의_장보기__마켓컬리/img_goods2.jpg"></a>
+                                                <span class ="ico_comm ico_arrow"></span>
+                                                <span class ="ico_comm ico_price">100원</span> 
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src ="마켓컬리____내일의_장보기__마켓컬리/img_goods3.jpg"></a>
+                                                <span class ="ico_comm ico_arrow"></span>
+                                                <span class ="ico_comm ico_price">100원</span> 
+
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src= "마켓컬리____내일의_장보기__마켓컬리/img_goods4.jpg"></a>
+                                                <span class ="ico_comm ico_arrow"></span>
+                                                <span class ="ico_comm ico_price">100원</span> 
+
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src = "마켓컬리____내일의_장보기__마켓컬리/img_goods5.jpg"></a>
+                                                <span class ="ico_comm ico_arrow"></span>
+                                                <span class ="ico_comm ico_price">100원</span> 
+                                            </li>
+                                            <li>
+
+                                                <a href="#"><img src = "마켓컬리____내일의_장보기__마켓컬리/img_goods6.jpg"></a>
+                                                <span class ="ico_comm ico_arrow"></span>
+                                                <span class ="ico_comm ico_price">100원</span>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class = "list_goods_text">
+                                        <img src = "마켓컬리____내일의_장보기__마켓컬리/img_goods_text.jpg">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div id = "eventBenefit02" class = "view_event5">
+
+                                <h4 class = "screen_out">혜택02 하나만 시도</h4>
+                                <span class ="txt_benefit" id = "text1" style="visibility : visible;">무료배송!</span>
+                                <p class = "screen_out">회원 가입 후 첫 구매 시, 어떤 상품을 사도 무료배송 혜택을 드립니다 배송비 부담 없이 마켓컬리를 경험해 보세요!</p>
+
+                                
 
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <div id ="layerDSR">
@@ -440,18 +1039,15 @@
             </div>
             <div id ="footer">
                 <div class ="inner_footer"></div>
-                <div class ="footer_link"></div> -->
-            </div>
-
-
-
-
-
-
-
-
+                <div class ="footer_link"></div>
+        </div>
     </div>
-
-
 </body>
 </html>
+
+
+
+
+
+
+
